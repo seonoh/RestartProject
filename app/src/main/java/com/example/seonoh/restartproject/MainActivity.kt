@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         secondBtn.setOnClickListener {
             Toast.makeText(this,"onClicked Second Button !",Toast.LENGTH_LONG).show()
         }
-
+        Toast.makeText(this,"HELLOW",Toast.LENGTH_LONG).show()
+        Toast.makeText(this,"GitKraken Test",Toast.LENGTH_LONG).show()
     }
 }
