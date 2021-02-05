@@ -2,7 +2,6 @@ package com.example.seonoh.restartproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import androidx.databinding.DataBindingUtil
 import com.example.seonoh.restartproject.data.ViewModel
 import com.example.seonoh.restartproject.databinding.ActivityMainBinding
@@ -16,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding : ActivityMainBinding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+        binding.presenter = Presenter()
         binding.my = ViewModel("Eam","Seonoh")
         binding.other = ViewModel("Oh","Bitna")
-        binding.presenter = Presenter()
     }
 }
