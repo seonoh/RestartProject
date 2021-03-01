@@ -8,6 +8,6 @@ class Presenter {
 
     fun onButtonClick(view : View,firstName : String,lastName :String){
         Toast.makeText(view.context,"$firstName $lastName",Toast.LENGTH_LONG).show()
-        Log.e("test","test clicked")
+        Log.e("isClicked","$firstName $lastName")
     }
 }
